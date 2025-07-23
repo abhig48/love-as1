@@ -3,18 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>For My Love ❤️</title>
+  <title>Our Love Story 💌</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Hey Love 💖</h1>
-    <p>
-      I just wanted to remind you how special you are to me.<br />
-      You're the smile to my day, the beat to my heart, and the peace to my soul.
-    </p>
-    <p class="heart">❤️</p>
-    <p>Forever yours,<br/>– Abhishek</p>
+  <div class="book">
+    <div class="page" id="page1">
+      <div class="content">
+        <h1>Hi My Love ❤️</h1>
+        <p>This little book holds pieces of my heart, just for you.</p>
+        <button onclick="nextPage()">Next ➡️</button>
+      </div>
+    </div>
+    <div class="page" id="page2">
+      <div class="content">
+        <h1>Remember When...</h1>
+        <p>We laughed until our stomachs hurt? Every memory with you is my favorite.</p>
+        <button onclick="nextPage()">Next ➡️</button>
+      </div>
+    </div>
+    <div class="page" id="page3">
+      <div class="content">
+        <h1>Forever Yours 💍</h1>
+        <p>You're not just my love — you're my best friend, my peace, and my future.</p>
+        <p>– Abhishek</p>
+        <button onclick="goToStart()">🔄 Start Again</button>
+      </div>
+    </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
