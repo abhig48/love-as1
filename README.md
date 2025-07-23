@@ -1,17 +1,17 @@
-# Love Book Website
+# Love Card Website
 
-This is a simple love website that looks like a flipping book. Each page has a sweet message.
+This is a simple one-page love card built with only HTML and CSS.  
+It displays a heartfelt message in a clean and centered card layout.
 
-## How to Use
+## How to View
 
 1. Open `index.html` in a browser to view it locally.
-2. Or deploy it to GitHub Pages to share online.
 
-## How to Deploy
+## How to Deploy on GitHub Pages
 
-1. Create a GitHub repository.
-2. Upload all files (`index.html`, `style.css`, `script.js`, `README.md`).
-3. Go to repository Settings > Pages.
-4. Set source to the `main` branch and save.
-5. Visit the generated GitHub Pages link to view your site.
+1. Create a GitHub repository (e.g., `love-card`).
+2. Upload the files: `index.html`, `style.css`, and `README.md`.
+3. Go to the repository's **Settings → Pages**.
+4. Under **Source**, select `main` branch and `/ (root)` folder.
+5. Save and open the provided GitHub Pages URL to view your love card.
 
