@@ -3,34 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Love Story 💌</title>
+  <title>Our Love Story</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <div class="book">
-    <div class="page" id="page1">
-      <div class="content">
-        <h1>Hi My Love ❤️</h1>
-        <p>This little book holds pieces of my heart, just for you.</p>
-        <button onclick="nextPage()">Next ➡️</button>
-      </div>
+    <input type="checkbox" id="page1" class="page-toggle">
+    <input type="checkbox" id="page2" class="page-toggle">
+    
+    <div class="page front cover">
+      <label for="page1">
+        <div class="content">
+          <h1>Hi My Love</h1>
+          <p>Tap to begin our little love story.</p>
+        </div>
+      </label>
     </div>
-    <div class="page" id="page2">
-      <div class="content">
-        <h1>Remember When...</h1>
-        <p>We laughed until our stomachs hurt? Every memory with you is my favorite.</p>
-        <button onclick="nextPage()">Next ➡️</button>
-      </div>
+
+    <div class="page back page1">
+      <label for="page2">
+        <div class="content">
+          <h1>Page One</h1>
+          <p>You're the smile I look for every day.</p>
+        </div>
+      </label>
     </div>
-    <div class="page" id="page3">
+
+    <div class="page back page2">
       <div class="content">
-        <h1>Forever Yours 💍</h1>
-        <p>You're not just my love — you're my best friend, my peace, and my future.</p>
-        <p>– Abhishek</p>
-        <button onclick="goToStart()">🔄 Start Again</button>
+        <h1>Forever Yours</h1>
+        <p>I made this just to see you smile.<br>With all my heart – Abhi</p>
       </div>
     </div>
   </div>
-  <script src="./script.js"></script>
 </body>
 </html>
