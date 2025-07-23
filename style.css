@@ -1,40 +1,38 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  background: #fff0f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: 'Segoe UI', sans-serif;
-}
-
-.card {
-  background: white;
-  padding: 2.5rem 2rem;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 90%;
-  width: 360px;
+  background: #fff5f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   color: #ff3366;
+  text-align: center;
 }
 
-.card h1 {
-  font-size: 2rem;
+.container {
+  padding: 2rem;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 8px 16px rgba(255, 51, 102, 0.2);
+}
+
+h1 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.card p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.heart {
+  font-size: 3rem;
+  animation: heartbeat 1s infinite;
 }
 
-.card .from {
-  margin-top: 2rem;
-  font-weight: bold;
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
 }
