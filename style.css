@@ -13,68 +13,28 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-.book {
-  width: 320px;
-  height: 480px;
-  position: relative;
-  perspective: 1200px;
-}
-
-.page {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.card {
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  transition: transform 1s ease;
-  transform-origin: left center;
-  padding: 2rem;
-  color: #ff3366;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
+  max-width: 90%;
+  width: 360px;
+  color: #ff3366;
 }
 
-.cover {
-  z-index: 3;
-  cursor: pointer;
-}
-
-.page1 {
-  transform: rotateY(180deg);
-  z-index: 2;
-  cursor: pointer;
-}
-
-.page2 {
-  transform: rotateY(180deg);
-  z-index: 1;
-}
-
-.page-toggle {
-  display: none;
-}
-
-#page1:checked ~ .page1 {
-  transform: rotateY(0deg);
-}
-
-#page1:checked ~ .cover {
-  transform: rotateY(-180deg);
-}
-
-#page2:checked ~ .page2 {
-  transform: rotateY(0deg);
-}
-
-.content h1 {
+.card h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.content p {
+.card p {
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+.card .from {
+  margin-top: 2rem;
+  font-weight: bold;
 }
